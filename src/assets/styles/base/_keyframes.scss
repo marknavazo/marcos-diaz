@@ -1,0 +1,16 @@
+@-webkit-keyframes lineV {
+    from {
+        @include translateY(-50px);
+    }
+    to {
+        @include translateY(0px);
+    }
+}
+@keyframes lineV {
+    from {
+        @include translateY(-50px);
+    }
+    to {
+        @include translateY(0px);
+    }
+}

@@ -1,0 +1,60 @@
+@mixin translateY($e) {
+  -webkit-transform: translateY($e);
+  -moz-transform: translateY($e);
+  transform: translateY($e);
+}
+
+@mixin transition($e) {
+  -webkit-transition:$e;
+  -moz-transition:$e;
+  transition:$e;
+}
+
+html {
+  min-height: 100%;
+  background: #fff;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Core Sans A 35';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  @include transition(all .4s ease-in-out);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+  
+h1, h2, h3, h4, h5, h6 {
+  color: #3b8595;
+  font-family: 'Core Sans A 65';
+  font-weight: bold;
+}
+
+.line-break {
+  border-bottom:1px solid black;
+  width: 150px;
+  margin:0 auto;
+}
+
+.margin-top-10 {
+  padding-top: 10px;
+}
+
+.margin-bot-10 {
+  padding-bottom:10px;
+}
+
+.toBottom {
+  -webkit-animation: lineV .5s;
+  animation: lineV .5s;
+  @include transition(1s);
+}
